@@ -165,21 +165,15 @@
             </div>
         `);
     });
-<script>
-  let current = 1;
 
-  function next() {
-    const currentEl = document.getElementById("screen" + current);
-    const nextEl = document.getElementById("screen" + (current + 1));
-
-    if (!nextEl) return; // stop at last screen
-
-    if (currentEl) currentEl.classList.add("hidden");
-    nextEl.classList.remove("hidden");
-
-    current++;
+    
+    <script>
+  function next(currentId, nextId) {
+    document.getElementById(currentId).style.display = "none";
+    document.getElementById(nextId).style.display = "block";
   }
 </script>
+
 
 
 
