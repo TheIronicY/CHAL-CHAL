@@ -165,7 +165,21 @@
             </div>
         `);
     });
+<script>
+    
+  let current = 1;
+
+  function next() {
+    const currentScreen = document.getElementById("screen" + current);
+    if (currentScreen) currentScreen.classList.add("hidden");
+
+    current++;
+
+    const nextScreen = document.getElementById("screen" + current);
+    if (nextScreen) nextScreen.classList.remove("hidden");
+  }
 </script>
+
 
 </body>
 </html>
